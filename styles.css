@@ -1,0 +1,196 @@
+body{
+
+   text-align: center;
+   background-image: url(./bg1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed; 
+}
+
+h1{
+   background-color: #474F7A;
+   color: aliceblue;
+   font-family:fantasy;
+   margin-top: 0;
+   padding: 0.75rem 0;
+   border-radius: 15px;
+   font-size: 50px;
+
+}
+
+.centering-main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity: 0.85;
+
+}
+
+.button-container{
+   /* height: 35vh; */
+   height: min-content;
+   width: min-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 20%;
+   
+}
+
+
+.play-button{
+   
+   padding: 0;
+   margin: 2.5rem 2rem;
+   border-radius: 50%;
+   background-color:rgb(211, 239, 247);
+   
+
+   
+
+}
+
+.play-button:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+   opacity: 0.5;
+   
+
+}
+
+img{
+   border-radius: 50%;
+   height: 18rem;
+   width: 18rem;
+   
+  
+
+}
+
+.display{
+   height: 22rem;
+   width: 24rem;
+   background-color: white;
+   margin-top: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 30px;
+   font-size: 20px;
+}
+
+
+.result{
+   background-color: #D1E9F6;
+   border-radius: 20px;
+   width: 20rem;
+   margin-bottom: 2rem;
+
+}
+
+.score{
+   background-color: #D1E9F6;
+   border-radius: 20px;
+   width: 20rem;
+   font-weight: 600;
+}
+
+h2{
+   margin: 5px 0;
+}
+
+p{
+   margin: 1rem;
+}
+
+.score-align{
+   display: flex;
+   justify-content: space-around; 
+   padding-bottom: 5px;
+}
+
+#outcome{
+   font-weight: 600;
+}
+
+
+/* responsive design */
+
+@media(max-width:660px){
+
+   body{
+
+      text-align: center;
+      background-image: url(./bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; 
+   }
+
+   h1{
+      font-size: 30px;
+      background-color: #45474B;
+   }
+
+   .button-container{
+      margin: 4rem 0;
+   }
+
+   img{
+      height: 7rem;
+      width: 7rem;
+      
+   }
+
+   .play-button{
+      margin: 1rem 0.75rem;
+   }
+
+   .display{
+      margin-top: 2rem;
+      height: 18rem;
+      width: 20rem;
+      font-size: 15px;
+   }
+
+   .result,.score{
+      width: 18rem;
+      background-color: #E6B9A6;
+   }
+
+
+}
+
+@media(min-width:660px) and (max-width:1100px){
+
+   h1{
+      font-size: 40px;
+   }
+
+   img{
+      height: 12rem;
+      width: 12rem;
+      
+   }
+
+   .play-button{
+      margin: 1.5rem 1rem;
+   }
+
+   .display{
+      margin-top: 4rem;
+      height: 21rem;
+      width: 24rem;
+      font-size: 20px;
+   }
+
+   .result,.score{
+      width: 20rem;
+   }
+
+}
